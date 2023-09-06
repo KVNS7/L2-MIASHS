@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Kevin">
+        <meta name="description" content="Cours de programmation web et introduction à PHP">
+        <meta name=“news_keywords” content=“HTML,CSS,JavaScript,PHP”>
+
+        <link rel="stylesheet" href="style1.css">
+    
+        <title>TD1</title>
+    
+        <img id="logo" class="logo_entete" src="logo_nanterre.png" alt="logo" width="500px">
+        <p id="Para_temps"></p>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#Para_HTML" data-texte="HTML">HTML</a></li>
+            <li><a href="#Para_CSS" data-texte="">CSS</a></li>
+            <li><a href="#Para_JavaScript" data-texte="JavaScript">JavaScript</a></li>
+        </ul>
+
+        <h1 id="Para_HTML">Langage HTML</h1>
+        <p id="p1"><b>HTML</b> est un langage de <i>description</i> de document</p>
+        
+
+        <h2 id="Para_CSS">Langage CSS</h2>
+        <p><b>CSS</b> est un langage de <i>présentation</i> de document</p>
+
+        <h3 id="Para_JavaScript">Langage JavaScript</h3>
+        <p><b>JavaScript</b> permet des <i>interactions</i> avec les utilisateurs</p>
+
+        <table>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JavaScript</th>
+            </tr>
+            <tr>
+                <td>HTML est un langage de description de document</td>
+                <td>CSS est un langage de presentation de document</td>
+                <td>JavaScript permet des interactions avec les utiliateurs</td>
+            </tr>
+        </table>
+        <br>
+
+        <form action="formulaire.txt" method="post">
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" name="utilisateur_nom" placeholder="Exemple" id="nom" >
+            </div>
+
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="utilisateur_prenom" placeholder="Jean" id="prenom" >
+            </div>
+
+            <div>
+                <label for="adresse">Adresse :</label>
+                <textarea name="adresse" placeholder="1 rue de Rivoli, Paris, 75004, France" id="utilisateur_adresse"></textarea>
+            </div>
+
+            <div>
+                <label for="tel">Tél :</label>
+                <input type="tel" name="tel" placeholder="06 12 34 56 78" id="utilisateur_tel" >
+            </div>
+
+            <div>
+                <label for="civilite">Civilité :</label>
+                M <input type="radio" name="civilite"value="M">
+                Mlle <input type="radio" name="civilite" value="Mlle">
+                Mme <input type="radio" name="civilite" value="Mme">
+            </div>
+
+            <div class="button">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+
+    </body>
+
+    <script src="partie2.js"></script>
+    
+    <style>
+
+        body{
+            background-color: orange;
+            color: red;
+        }
+
+    </style>
+
+</html>

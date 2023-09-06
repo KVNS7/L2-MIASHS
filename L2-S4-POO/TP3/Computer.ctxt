@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Computer
+comment1.params=ram\ mem
+comment1.target=Computer(int,\ int)
+comment2.params=
+comment2.target=int\ getRam()
+comment3.params=
+comment3.target=int\ getMem()
+numComments=4

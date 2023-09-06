@@ -1,0 +1,15 @@
+On voit que les relations de ce modèle sont normalisées en FN1 car chaque attribut n'es présent qu'une seule fois par table et n'est pas décomposable ennuyant d'autres attributs. De plus, aucun attribut n'es lui-même une relation.
+
+
+Les relations sont également normalisées en FN2 car tout les attributs des tables dépendent de la totalité de la clé de leur table :
+
+Clients : ID_Client -> {Nom, Prénom, Date_N, Adresse, Email, Tel, Mdp, Ref_panier}
+
+Articles_panier : -> {Taille, Quantité, Ref_produit, Ref_modele, Ref_panier}
+
+Produits : ID_Produit -> {Nom, Marque, Prix, Description}
+
+Modeles : ID_modele -> {Couleur, Emplacement_img, Ref_produit}
+
+
+Pour finir on peut montrer qu'elles sont normalisées en FN3 car aucun attribut des tables ne dépend de la clé primaire par dépendance fonctionnelle transitive, ils y dépendent tous directement.

@@ -1,0 +1,257 @@
+/*              IMPORTATION POLICE              */
+
+@font-face {
+    font-family: 'police1';
+    src: url("Fjalla_One/FjallaOne-Regular.ttf");
+}
+
+
+/*              BODY              */
+
+
+body{
+    background: linear-gradient(180deg, rgba(112,111,111,1) 20%, rgba(177,177,177,0.6829919467787116) 75%, rgba(204,205,205,1) 100%);
+    font: 1rem/1.5 Roboto, Arial, sans-serif;
+}
+
+body #logo{
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: 35%;
+}
+
+hr{
+    border: 0;
+    clear:both;
+    display:flex;
+    width: 100%;               
+    background-color: black;
+    height: 2px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+button{
+    background-color: transparent;
+    margin: 0 10%;
+    padding: 1.5% 0.5%;
+    color: white;
+    border: none;
+    letter-spacing: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  button:hover{
+      background: rgb(89, 102, 120);
+      color: #050801;
+      box-shadow: 0 0 15px rgb(24,40,63),
+                  0 0 15px rgb(24,40,63),
+                  0 0 15px rgb(24,40,63),
+                  0 0 15px rgb(24,40,63);
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  }
+
+
+/*              ANIMATION LANCEMENT              */
+
+
+/*.transition-opacity{
+    opacity: 0;
+    transition: opacity 1s ease-in 0.5s;
+}
+
+body.show .transition-opacity{
+    opacity: 1;
+}
+
+#logo{
+    transform: translate(0%, +65%) scale(3.8);
+    animation: appear 1.5s ease-in 1.3s forwards;
+}
+    
+@keyframes appear {
+    0% {
+    transform: translate(0%, +65%) scale(3.8);
+    }
+    100% {
+    transform: translate(0, 0) scale(1);
+    }
+}*/
+
+
+/*              POP-UP FILTRES              */
+
+
+.popup{
+    color: black;
+    background-color: darkgray;
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    border: 1px solid black;
+}
+
+
+.close-button {
+    /* Reset */
+    background-color: transparent;
+    border-color: transparent;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Size */
+    height: 3rem;
+    width: 3rem;
+
+    /* Used to position the inner */
+    position: relative;    
+    float: right;
+    
+}
+
+.close-button__line {
+    /* Background color */
+    background-color: white;
+
+    /* Position */
+    position: absolute;
+
+    /* Size */
+    height: 1px;
+    width: 100%;
+}
+
+.close-button__line--first {
+    /* Position */
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%) rotate(45deg);
+
+    /* Size */
+    height: 0.5px;
+    width: 100%;
+}
+
+.close-button__line--second {
+    /* Position */
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 0%) rotate(45deg);
+
+    /* Size */
+    height: 100%;
+    width: 0.5px;
+}
+
+
+/*              CHAUSSURES ACCUEIL              */
+
+
+#vitrine_accueil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#vitrine_accueil img{
+    width: 40%;
+    max-width: 150px;
+    height: auto;
+    margin: 20px;
+}
+
+#vitrine_accueil a{
+    flex: 31%; 
+    margin: 5px;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px grey;
+}
+
+.details{
+    font-family: 'police1';
+}
+
+.details .nom{
+    font-size: 150%;
+}
+
+.details .marque{
+    font-size: 140%;
+}
+
+.details .prix{
+    font-size: 100%;
+}
+
+
+
+
+/*              FOOTER              */
+
+footer{
+    background-color: #ababab;
+    margin-left: -8px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: row;
+}
+
+
+
+footer ul{
+    display: inline-block;
+    
+    padding: 0;
+    margin: 0em 2em 2em 2em;
+    vertical-align: top;
+    list-style: none;
+    justify-content: center;
+
+}
+
+footer ul li{
+    margin: 0.5em;
+}
+
+footer ul h3{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 50%;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#reseauxsociaux li{
+    display: inline-block;
+    
+}
+
+.Icon {
+    display: inline-block;
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    transition: transform 0.2s;
+    transform-origin: 50% 50%;
+}

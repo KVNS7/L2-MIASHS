@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Compteur
+comment1.params=
+comment1.target=void\ reinitialiser()
+comment2.params=
+comment2.target=void\ incrementer()
+comment3.params=
+comment3.target=void\ decrementer()
+comment4.params=
+comment4.target=void\ afficher()
+numComments=5

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Etudiant
+comment1.params=name\ nbNotes
+comment1.target=Etudiant(java.lang.String,\ int)
+comment1.text=\ Constructeur\ A\ \:\n\ L'\u00E9tat\ initial\ d'un\ objet\ Etudiant\ contient\ le\ nom\ de\ l'\u00E9tudiant\ (attribut\ name).\n\ En\ revanche,\ initialement,\ un\ objet\ Etudiant\ ne\ contient\ aucune\ des\ grades\n\ de\ l'\u00E9tudiant.\ On\ se\ contente\ de\ cr\u00E9er\ l'objet\ tableau;\ le\ type\ double\ \u00E9tant\ un\n\ type\ de\ donn\u00E9es\ de\ base,\ les\ cases\ de\ tableau\ sont\ initialis\u00E9es\ \u00E0\ 0.\ \n\ \n\ Dit\ autrement,\ lorsqu'on\ cr\u00E9e\ un\ objet\ Etudiant,\ il\ est\ marqu\u00E9\ absent\n\ par\ d\u00E9faut\ \u00E0\ tous\ les\ controles\ \!\n\ \n\ Les\ arguments\ du\ constructeur\ sont\ donc\ \:\ le\ nom\ de\ l'\u00E9tudiant\ et\ le\ nombre\ de\ grades.\ \n\ Exemple\ de\ cr\u00E9ation\ d'un\ objet\ Etudiant\:\ new\ Etudiant("Thomas",5)\n
+comment2.params=name\ notes
+comment2.target=Etudiant(java.lang.String,\ double[])
+comment2.text=\ Constructeur\ B\ \:\n\ L'\u00E9tat\ initial\ d'un\ objet\ Etudiant\ contient\ le\ nom\ de\ l'\u00E9tudiant\ (attribut\ name)\n\ ainsi\ que\ ses\ grades.\n\ \n\ Les\ arguments\ du\ constructeur\ sont\ donc\ \:\ le\ nom\ de\ l'\u00E9tudiant\ et\ un\ tableau\ de\ grades.\ \n\ Exemple\ de\ cr\u00E9ation\ d'un\ objet\ Etudiant\:\ \n\ \n\ new\ Etudiant("Thomas",new\ double[]\ {13,\ 10,\ 12.5})\n
+comment3.params=
+comment3.target=java.lang.String\ name()
+comment4.params=i\ note
+comment4.target=void\ setNote(int,\ double)
+comment4.text=\n\ Les\ notes\ sont\ num\u00E9rot\u00E9es\ \u00E0\ partir\ de\ 1\ (et\ non\ de\ 0)\n
+comment5.params=i
+comment5.target=double\ getNote(int)
+comment6.params=
+comment6.target=double\ moyenne()
+numComments=7

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Aire
+comment0.text=\n\ D\u00E9crivez\ votre\ classe\ Aire\ ici.\n\n\ @author\ (votre\ nom)\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\n
+comment1.params=max
+comment1.target=Aire(int)
+comment2.params=city
+comment2.target=void\ ajouter(Ville)
+comment3.params=
+comment3.target=void\ afficher()
+numComments=4

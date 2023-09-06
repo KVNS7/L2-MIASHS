@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Moteur2
+comment1.params=
+comment1.target=int\ getPuissance()
+comment2.params=p
+comment2.target=void\ setPuissance(int)
+numComments=3

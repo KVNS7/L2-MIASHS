@@ -1,0 +1,6 @@
+﻿ID_Connecteur;Type_connecteur;Puissance_PDC;Nombre_PDC;Type_courant_PDC;Comptage_énergie;Type_de_recharge
+CON01;CON02-CON02 pour groupe frigo-prise T3-prise T2-cable CHadeMO-cable Combo2;22.0;1;AC mono-AC tri-DC;oui;accélérée
+CON02;CON02;3.7;1;AC mono;oui;normale
+CON03;prise T3;3.7;1;AC mono;oui;normale
+CON04;prise T3 et CON02;3.7;1;AC mono;oui;normale
+CON05;prise T2-CON02;3.7;1;AC mono;oui;normale

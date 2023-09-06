@@ -1,0 +1,18 @@
+SITE DE VENTES DE CHAUSSURES
+
+-Page d'accueil vitrine:
+	-Photos des chaussures cliquables avec floutage des autres quand la souris passe sur une paire
+	-Menu de filtres
+	-Panier
+	-Bouton pour créer un compte/se connecter
+	-Boutiques avec les paires qu'elles  proposent
+
+-Pages individuelles:
+	-Description, caractéristiques
+	-Choix de couleurs, de taille
+	-Possibilité d'ajouter au panier
+	-
+
+-Panier:
+	-Possibilité de retirer du panier
+	-Bouton pour acheter 

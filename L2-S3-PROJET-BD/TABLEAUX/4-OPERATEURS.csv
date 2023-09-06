@@ -1,0 +1,4 @@
+ID_Operateur;Operateur;Nom_reseau;Type_communication_supervision;Type_systeme_identification;Acces_reseau;Tarif_general;Tarif_autopartage;Mode_paiement
+OP01;Izivia;Belib';3G;badge RFID;inscription;1€ la première heure et 16€ chaque heure supplémentaire, facturation à la minute;NULL;débit compte bancaire post paiement
+OP02;Mairie de Paris;Bornes de recharge;NULL;NULL;inscription;120 €/an;600 €/an;redevance annuelle
+OP03;Bouygues;Bornes sur candélabre;3G;badge RFID;inscription;1€ la première heure et 3€ chaque heure supplémentaire, facturation à la minute, gratuit la nuit de 20h à 8h;NULL;débit compte bancaire post paiement

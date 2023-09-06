@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Chanson
+comment1.params=titre\ duree
+comment1.target=Chanson(java.lang.String,\ int)
+comment1.text=\n\ On\ enregistre\ le\ titre\ et\ la\ dur\u00E9e\ de\ la\ chanson\ \u00E0\ la\ cr\u00E9ation\ d'un\ objet\ Chanson\n\ \n\ Exemple\ de\ cr\u00E9ation\ d'un\ objet\ Chanson\ \:\ new\ Chanson("In\ the\ flesh\ ?",199)\n
+comment2.params=
+comment2.target=java.lang.String\ getTitre()
+comment3.params=
+comment3.target=int\ getDuree()
+comment4.params=
+comment4.target=void\ display()
+comment4.text=\n\ affiche\ dans\ une\ console\ une\ chaines\ de\ caract\u00E8res\ renseignant\ sur\ l'\u00E9tat\ de\ l'objet\ \:\n\ Chanson\ c\ \=\ new\ Chanson("In\ the\ flesh\ ?",199);\n\ c.display();\ //\ affiche\ "In\ the\ flesh\ ?\ 3\:19"\n
+numComments=5

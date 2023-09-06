@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ListeChansons
+comment1.params=capacite
+comment1.target=ListeChansons(int)
+comment1.text=\n\ A\ la\ cr\u00E9ation\ d'un\ objet\ ListeChansons,\ la\ liste\ de\ chansons\ est\ vide\ \:\ on\ ne\ cr\u00E9e\n\ que\ le\ tableau\ de\ r\u00E9f\u00E9r\u00E9nces\ liste\ qui\ sont\ toutes\ initialis\u00E9es\ \u00E0\ null.\ Le\ seul\n\ argument\ du\ constructeur\ est\ le\ nombre\ maximal\ de\ chansons\ que\ pourra\ contenir\ \n\ la\ liste\ (qu'on\ appelle\ sa\ capacit\u00E9)\n
+comment2.params=
+comment2.target=int\ capacite()
+comment3.params=
+comment3.target=int\ nbChansons()
+comment4.params=titreChanson\ dureeChanson
+comment4.target=void\ ajouter(java.lang.String,\ int)
+comment5.params=
+comment5.target=void\ afficher()
+numComments=6

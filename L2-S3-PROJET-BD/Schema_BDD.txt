@@ -1,0 +1,55 @@
+Lien site : https://app.quickdatabasediagrams.com/#/
+
+
+Texte a copier-coller :
+
+Bornes
+--------
+ID_Point PK varchar(50)
+Latitude decimal(9,7)
+Longitude decimal(9,7)
+Type_emplacement char(8)
+Accessibilite char(9)
+Refstation char(15) FK >- Stations.ID_Station
+Nb_places tinyint(1)
+RefOP char(4) FK >- Operateurs.ID_Operateur
+RefConnecteur char(5) FK >- Connecteurs.ID_Connecteur
+RefFabricant char(2) FK >- Fabricants.ID_Fabricant
+
+Stations
+----------
+ID_Station PK char(15)
+ID_Autolib char(8)
+Nom_Station varchar(50)
+Nom_Voie varchar(50)
+CP int(5)
+
+Connecteurs
+--------------
+ID_Connecteur PK char(5)
+Type_connecteur varchar(100)
+Puissance_PDC decimal(3,1)
+Nombre_PDC tinyint(1)
+Type_courant_PDC varchar(30)
+Comptage_energie char(3)
+Type_recharge char(10)
+
+Operateurs
+-------------
+ID_Operateur PK char(4)
+Operateur varchar(20)
+Nom_reseau varchar(25)
+Type_communication_supervision char(5)
+Type_systeme_identification varchar(15)
+Acces_reseau varchar(15)
+Tarif_general varchar(150)
+Tarif_autopartage varchar(10)
+Mode_paiement varchar(50)
+
+Fabricants
+------------
+ID_Fabricant PK char(2)
+Fabricant_borne varchar(20)
+Referentiel_produit varchar(50)
+Tel_SAV char(14)
+Horaires_SAV varchar(20)

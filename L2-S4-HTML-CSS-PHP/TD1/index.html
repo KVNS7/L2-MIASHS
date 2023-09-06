@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Kevin Soares">
+    <meta name="description" content="Cours de programmation web et introduction à PHP">
+    <meta name="keyword" content="HTML CSS JavaScript PHP">
+    <!-- !! <META http-equiv="Refresh" content="60; url=http://www.parisnanterre.fr/">-->
+
+    <title>TD1</title>
+</head>
+
+<header>
+<img src="logo.UPN.png" alt="Logo">
+</header>
+
+<body>
+
+    <ul>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#JavaScript">JavaScript</a></li>
+    </ul>
+    
+    <h1 id="HTML">Langage HTML</h1>
+    <p> <b>HTML</b> est un langage de <em>description</em> de document</p>
+
+    <h2 id="CSS">Langage CSS</h2>
+    <p><b>CSS</b> est un langage de <em>présentation</em> de document</p>
+
+    <h3 id="JavaScript">Langage JavaScript</h3>
+    <p><b>JavaScript</b> permet des <u>interactions</u> avec les utilisateurs</p>
+
+    <table>
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+        </tr>
+        <tr>
+            <td>HTML est un langage de description de document</td>
+            <td>CSS est un langage de présentation de document</td>
+            <td>JavaScript permet des interactions avec les utilisateurs</td>
+        </tr>
+    </table>
+    <br>
+    <form action="formulaire.php" method="POST">
+
+        <div>
+        <label for="nom">Nom : <br></label>
+        <input type="text" id="nom" placeholder="Dupont" name="user_nom">
+        </div>
+
+        <div>
+        <label for="prenom">Prenom : <br></label>
+        <input type="text" id="prenom" placeholder="Jean" name="user_prenom">
+        </div>
+
+        <div>
+        <label for="adresse">Adresse : <br></label>
+        <textarea id="adresse" placeholder="1 rue de rivoli, Paris, 75014, France" name="user_adresse"></textarea>
+        </div>
+
+        <div>
+            <label for="tel">Tel : <br></label>
+            <input type="tel" id="tel" placeholder="06 12 34 56 78" name="user_tel">
+        </div>
+
+        <div>
+            <label for="civilite">Civilite : <br></label>
+            M<input type="radio" id="civilite" name="user_civilite_M" value="M">
+            Mme<input type="radio" id="civilite" name="user_civilite_Mme" value="Mme">
+            Mlle<input type="radio" id="civilite" name="user_civilite_Mlle" value="Mlle">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+
+
+    </form>
+
+</body>
+
+
+<style>
+
+    table, th, td{
+        border-collapse: collapse;
+        border: 1px solid;
+        width: 360px;
+    }
+
+    td{
+        height: 100px;
+        text-align: justify;
+    }
+
+</style>
+
+</html>

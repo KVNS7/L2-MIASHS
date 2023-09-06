@@ -1,0 +1,49 @@
+*{
+    background-color: green;
+    color: green;
+}
+
+p{
+    font-style: italic;
+}
+
+p:first-of-type{
+    font-weight: bold;
+}
+
+ul{
+    list-style: square;
+}
+
+a{
+ text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+a:visited{
+    color: pink;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 360px;
+}
+
+td{
+    height: 100px;
+    text-align: justify;
+    font-style: italic;
+}
+
+th{
+    text-align: center;
+    color: blue;
+}
+
+img{
+    opacity: 50%;
+}

@@ -1,0 +1,50 @@
+Lien site : 
+
+https://app.quickdatabasediagrams.com/#/
+
+
+Texte a copier-coller :
+
+Clients
+---------------------
+ID_Client PK INT
+Nom VARCHAR(50)
+Prenom VARCHAR(50)
+Date_N DATE
+Adresse VARCHAR(300)
+Email VARCHAR(300)
+Tel INT
+Mdp VARCHAR(50)
+Ref_panier INT FK >- Paniers.ID_panier
+
+
+Paniers
+---------------------
+ID_Panier PK INT
+
+
+Articles_panier
+---------------------
+ID_article PK INT
+Taille INT
+Quantite INT
+Ref_produit INT FK >- Produits.ID_produit
+Ref_modele INT FK >- Modeles.ID_modele
+Ref_panier INT FK >- Paniers.ID_panier
+
+
+Produits
+---------------------
+ID_Produit PK INT
+Nom VARCHAR(300)
+Marque VARCHAR(300)
+Prix DECIMAL(6,2)
+Description VARCHAR(500)
+
+
+Modeles
+---------------------
+ID_modele PK INT
+Couleur VARCHAR(300)
+Emplacement_img VARCHAR(300)
+Ref_produit INT FK >- Produits.ID_produit

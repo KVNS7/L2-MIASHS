@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Peintre
+comment1.params=porte\ couleur
+comment1.target=void\ peindre(Porte,\ java.lang.String)
+numComments=2

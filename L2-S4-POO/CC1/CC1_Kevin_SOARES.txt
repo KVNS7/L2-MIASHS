@@ -1,0 +1,97 @@
+--------------------------- Exercice 1 : ---------------------------
+
+1. Définir la classe :
+
+public class Ville
+{
+    private String nom;
+    private int nb_habitants;
+    
+    public Ville(String name, int nb){
+        nom = name;
+        nb_habitants = nb;
+    }
+    
+    public String getNom(){return nom;}
+    public int getNb_habitants(){return nb_habitants;}
+    
+    public void setNom(String name){nom = name;}
+    public void setNb_habitants(int nb){nb_habitants = nb;}
+    
+    public String description(){
+        return nom + " : " + nb_habitants + " habitants.";
+    }
+}
+
+---------------------------------------------------------------------
+
+2. Proposer une classe de d"monstration de votre classe :
+
+public class DemoVille
+{
+    public static void main(String[] args)
+    {
+        Ville ville = new Ville("Courbevoie",82074); 
+        ville.getNom();
+        ville.getNb_habitants();
+        ville.setNom("Nanterre");
+        ville.setNb_habitants(95782);
+        ville.description();
+    }
+}
+
+
+--------------------------- Exercice 2 : ---------------------------
+
+1.Definir la classe :
+
+public class Aire
+{
+    public int max_villes;
+    private int nb_villes;
+    private Ville[] villes;
+    
+    public Aire(int max){
+        max_villes = max;
+        nb_villes = 0;
+        this.villes = new Ville[max_villes];
+    }
+    
+    public void ajouter(Ville city)
+    {
+        if(nb_villes!=max_villes)
+        {
+            villes[nb_villes] = city;
+            nb_villes++;
+        }else
+        {
+            System.out.print("Impossible : Nombre maximum de villes pour cette aire déja atteint\n");
+        }
+    }
+    
+    public void afficher()
+    {
+        System.out.printf("%d villes\n",nb_villes);
+        
+        if(nb_villes!=0){
+            for(int x=0; x<nb_villes;x++){
+                System.out.printf("%s : %d habitants\n",villes[x].getNom(),villes[x].getNb_habitants());
+            }
+        }
+    }
+}
+
+---------------------------------------------------------------------
+
+2. Proposer une classe de démonstration de votre classe :
+
+public class DemoAire
+{
+    public static void main(String[] args)
+    {
+        Ville ville1 = new Ville("Nanterre",63738);
+        Aire aire = new Aire(5); 
+        aire.ajouter(ville1);
+        aire.afficher();
+    }
+}

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Pile
+comment1.params=capacity
+comment1.target=Pile(int)
+comment2.params=
+comment2.target=void\ afficher()
+comment3.params=
+comment3.target=void\ print()
+comment4.params=i
+comment4.target=void\ empiler(int)
+comment5.params=
+comment5.target=int\ depiler()
+comment6.params=
+comment6.target=boolean\ estPleine()
+comment7.params=
+comment7.target=boolean\ estVide()
+numComments=8

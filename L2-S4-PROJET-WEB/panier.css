@@ -1,0 +1,150 @@
+/*              BODY              */
+@font-face {
+    font-family: 'police1';
+    src: url("Fjalla_One/FjallaOne-Regular.ttf");
+}
+
+body{
+    background: linear-gradient(180deg, rgba(112,111,111,1) 20%, rgba(177,177,177,0.6829919467787116) 75%, rgba(204,205,205,1) 100%);
+    font: 1rem/1.5 Roboto, Arial, sans-serif;
+}
+
+body #logo{
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: 35%;
+}
+
+hr{
+    border: 0;
+    clear:both;
+    display:flex;
+    width: 100%;               
+    background-color: black;
+    height: 2px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+button{
+    background-color: transparent;
+    margin: 0 10%;
+    padding: 0.8% 0.5%;
+    color: white;
+    border : none;
+    letter-spacing: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  button:hover{
+      background: rgb(89, 102, 120);
+      color: #050801;
+      box-shadow: 0 0 15px rgb(24,40,63),
+                  0 0 15px rgb(24,40,63),
+                  0 0 15px rgb(24,40,63),
+                  0 0 15px rgb(24,40,63);
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  }
+
+  h1{
+    text-align: center;
+    font-family: 'police1';
+    letter-spacing: 2px;
+}
+
+.article{
+    font-family: 'police1';
+    border : solid 2px grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.article img{
+    width: 20%;
+    height: auto;
+}
+
+.btn_accueil{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-left: 70%;
+    margin-bottom: 5%;
+    font-family: 'police1';
+    border : 2px solid black;
+    
+}
+
+
+
+
+/*              FOOTER              */
+
+
+footer{
+    background-color: #ababab;
+    margin-left: -8px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: row;
+}
+
+
+
+footer ul{
+    display: inline-block;
+    padding: 0;
+    margin: 0em 2em 2em 2em;
+    vertical-align: top;
+    list-style: none;
+    justify-content: center;
+
+}
+
+footer ul li{
+    margin: 0.5em;
+}
+
+footer ul h3{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 50%;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#reseauxsociaux li{
+    display: inline-block;
+    
+}
+
+.Icon {
+    display: inline-block;
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    transition: transform 0.2s;
+    transform-origin: 50% 50%;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+body{
+    background-color: green;
+    color: green;
+}
+
+h1{
+    color: blue;
+}
+
+p, ul{
+    font-style: italic;
+    list-style-type: square;
+}
+
+#p1{
+    font-weight: bold;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+a:visited{
+    color: rgb(230, 65, 154);
+}
+
+table, tr, th, td{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+th{
+    color: blue;
+    text-align: center;
+}
+
+td{
+    font-style: italic;
+    text-align: justify;
+}
+
+th, td{
+    width: 145px;
+}
+
+img{
+    opacity: 50%;
+}

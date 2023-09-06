@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TD2</h1>
+    <h2>Formulaire d'inscription</h2>
+
+<form action="TD2.php" method="post">
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" placeholder="Dupont" name="user_nom" required="required">
+        </div>
+    
+        <div>
+            <label for="prenom">Prenom :</label>
+            <input type="text" id="prenom" placeholder="Jean" name="user_prenom" required="required">
+        </div>
+        
+        <div>
+            <label for="civilite">Civilite : </label>
+            M<input type="radio" id="civilite" name="user_civilite">
+            Mme<input type="radio" id="civilite" name="user_civilite">
+            Mlle<input type="radio" id="civilite" name="user_civilite">
+        </div>
+    
+        <div>
+            <label for="etudes">Niveau d'études :</label>
+            <select id="etudes" name="user_etudes">
+                <option value="Licence">Licence</option>
+                <option value="Master">Master</option>
+                <option value="Doctorat">Doctorat</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="mail">Email :</label>
+            <input type="email" name="mail" placeholder="example@gmail.com" id="user_mail" required="required">
+        </div>
+    
+        <div>
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" name="user_mdp" id="mdp" required="required">
+        </div>  
+    
+        <div>
+            <label for="confirm_mdp">Confirmation mot de passe :</label>
+            <input type="password" name="user_confirm_mdp" id="confirm_mdp" required="required">
+        </div>
+    
+    </fieldset>
+    
+    <fieldset>
+        <legend>Informations de contact</legend>
+    
+        
+        <div>
+            <label for="adresse">Adresse :</label>
+            <input type="text" name="user_adresse" placeholder="1 rue de Rivoli" id="adresse" required="required">
+        </div>
+    
+        <div>
+            <label for="ville">Ville :</label>
+            <input type="text" name="user_ville" placeholder="Paris" id="ville" required="required">
+        </div>
+        
+        <div>
+            <label for="postal">Code postal :</label>
+            <input type="text" name="user_postal" placeholder="75014" id="postal" pattern="[0-9]{5}" required="required">
+        </div>
+    
+        <div>
+            <label for="pays">Pays :</label>
+            <input type="text" name="user_pays" placeholder="France" id="pays" required="required">
+        </div>
+    
+        <div>
+            <label for="tel">Téléphone :</label>
+            <input type="tel" name="user_tel" placeholder="06 12 34 56 78" id="tel" pattern="[0-9]{10}" required="required">
+        </div>
+    
+        <div>
+            <label for="photo">Charger votre photo :</label>
+            <input type="file" name="user_photo" id="photo" accept="image/*" required="required">
+        </div>
+    </fieldset>
+    
+    <button type="submit">Valider</button>
+    <button type="reset">Reinitialiser</button>
+    
+</form>
+        
+<br><br>
+<table border : 1px solid>
+    <tr>
+        <th colspan="2">Colonnes 1 et 2 fusionnées</th>
+        <th>Colonne 3</th>
+        <th colspan="2">Colonnes 4 et 5 fusionnés</th>
+    </tr>
+    <tr>
+        <td>Colonne 1</td>
+        <td>Colonne 2</td>
+        <td>Colonne 3</td>
+        <td>Colonne 4</td>
+        <td>Colonne 5</td>
+    </tr>
+    <tr>
+        <td>Colonne 1</td>
+        <td colspan="3">Colonnes 2, 3 et 4 fusionnés</td>
+        <td>Colonne 5</td>
+    </tr>
+</table>
+<br><br><br>
+
+<h2>Fichier audio :</h2>
+<audio controls src="chouette.mp3"></audio>
+
+<h2>Fichier video :</h2>
+<iframe width="320" height="200" src="https://www.youtube.com/embed/lJIrF4YjHfQ" title="Intégrer des vidéos et des playlists" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+
+<h2>Carte intégrée :</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5779.795694808683!2d2.2101640840899823!3d48.90324185280157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66466ab41d5e7%3A0x45694d7dfbad7f55!2sUniversit%C3%A9%20Paris%20Nanterre!5e0!3m2!1sfr!2sfr!4v1675783000584!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

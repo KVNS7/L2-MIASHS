@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'police1';
+    src: url("Fjalla_One/FjallaOne-Regular.ttf");
+}
+
+*{
+    font-family: 'police1';
+}
+
+body{
+    max-width: 960px;
+    background-color: rgb(215, 215,215);
+    margin: auto;
+    position: relative;
+}
+
+h1,h2{
+    margin-left: 5px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-weight: 100;
+}
+
+
+h3{
+    color: rgb(126,133,135);
+}
+
+part1{
+margin-left: 5px;
+width: 240px;
+position: absolute;
+}
+
+part2{
+margin-left: 400px;
+position: absolute;
+max-width: 350px;
+}
+
+part2.h3.ul{
+white-space: normal;
+}
+
+part2.p{
+    max-width: 140px;
+}
+
+h5{
+    margin-top: -22px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+ul.liste-BSI{
+    margin-top: -10px;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}

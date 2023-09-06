@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Passager
+comment1.params=nom
+comment1.target=Passager(java.lang.String)
+comment1.text=\n\ L'\u00E9tat\ initial\ d'un\ objet\ Passager\ contient\ l'identit\u00E9\ du\ passager\ qui\ est\ \n\ donn\u00E9e\ en\ argument\ du\ constructeur.\n\ \n\ Cr\u00E9ation\ d'un\ objet\ Passager\ \:\ new\ Passager("John\ Doe")\n
+comment2.params=
+comment2.target=java.lang.String\ nom()
+numComments=3

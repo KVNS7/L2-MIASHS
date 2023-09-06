@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CinemaQuartier
+comment1.params=
+comment1.target=CinemaQuartier()
+comment2.params=film
+comment2.target=void\ programmer(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ film()
+numComments=4

@@ -1,0 +1,64 @@
+Evolution de la base : 
+- Ajout de contrainte NOT NULL sur les colonnes :
+	- Table BORNES : Latitude, Longitude, RefStation
+	- Table STATIONS : Nom_Station, Nom_Voie
+	- Table CONNECTEURS : Puissance_PDC, Nombre_PDC
+	- Table OPERATEURS : Nom_reseau, Tarif_general, Mode_Paiement
+	- Table FABRICANTS : Fabricant_borne
+
+- Ajout de contrainte UNIQUE sur les colonnes :
+	- Table OPERATEURS :Operateurs
+	- Table FABRICANTS : Fabricant_borne, Tel_SAV
+	
+- Ajout de FOREIGN KEY :
+	- Bornes.RefStation -> Stations.ID_Station
+	- Bornes.RefOp -> Operateurs.ID_Operateur
+	- Bornes.RefConnecteur -> Connecteurs.ID_Connecteur
+	- Bornes.RefFabricant -> Fabricants.ID_Fabricant
+
+
+Interrogation de la base :
+	Requêtes basiques (12 mini):
+		Sans jointure (8):
+- Affiche les bornes du fabricant F3
+- Affiche les bornes reliées à l'opérateur OP01
+- Affiche les bornes avec un emplacement mixte liées au connecteur CON04
+- Affiche les stations du 75012
+- Affiche les stations avec ID_autolib NULL
+- Affiche les stations qui se trouvent sur un quai (utiliser LIKE(%QUAI%))
+- Affiche les connecteurs affichés par ordre puissance decroissant
+- Affiche les operateurs dont le systeme d'identification est un badge RFID
+
+		Avec jointure (4):
+- Affiche les bornes qui ont un connecteur a recharge accélérée et dont la station se situe dans le 15e arrondissement de Paris
+- Affiche les bornes dont la station est dans le 01 ou 17 arrondissement de Paris ainsi que leur tarifs
+- Affiche les stations qui ont des bornes possedant un connecteur avec recharge accélérée
+- Affiche les bornes dont le connecteur a une puissance entre 3 et 5
+
+	Requêtes avec fonction d'agrégation (10 mini) :
+- Affiche le nombre de bornes par fabricant
+- Affiche le nombre de bornes par arrondissement de Paris
+- Affiche le nombre de stations par arrondissement de Paris
+- Affiche le nombre de prises de courant par arrondissement de Paris
+- Affiche le nombre de bornes par type de recharge
+- Affiche le nombre de bornes du fabricant F2 selon chaque arrondissement de Paris
+- Affiche la puissance minimum etmaximum disponible ainsi que la moyenne pour les bornes de chaque arrondissement de Paris
+- Affiche le nombre de bornes par type d'emplacement pour chaque fabricant
+- Affiche les stations ayant la latitude la plus élévée ainsi que celles ayant la moins élévée
+- Affiche le nombre de bornes par connecteur et par type d'emplacement 
+
+Mise a jour de la base :
+	Ajouter des lignes dans des tables (2 mini) :
+- Ajout d'un noveau connecteur avec les valeurs ("CON06","prise T3","1.8","2","AC mono","oui","normale")
+- Ajout d'un nouveau fabricant avec les valeurs ("F4","Orange","UrbanEnergy","01 23 45 67","7/7 - 6 a 00h")
+
+	Mises à jour de données sur une ou plusieurs tables (8 mini) :
+- Modifie la puissance des connecteurs de type CON02 et leur affecte la valeur 7
+- Ajoute une prise à tout les connecteurs dont la puissance est supérieure à 5
+- Modifie le type de courant des prises de courant en AC DUO pour les Connecteurs ayant 2 prises de courant
+- Modifie le type de connecteur et le fabricant de toutes les bornes du 20e arrondissement de Paris par CON06 et F4
+- Modifie l'emplacement des bornes dans le 9e arrondissement de Paris par trottoir 
+- Modifie le nombre de place à 2 pour les bornes qui ont un connecteur avec 2 places
+- Modifie le type_communication_supervision en 4G pour l'operateur Mairie de Paris
+- Modifie les connecteurs en CON02 pour les bornes dont l'operateur est la Mairie de Paris et se situant dans le 4e arrondissement de Paris
+
